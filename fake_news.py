@@ -11,11 +11,11 @@ class FakeNews:
     #Create singleton instance
     __agent = None
     def init():
-        api_key = "sk-proj-dRY6fYGIgprgvvc3mPLUT3BlbkFJEHALR7S6wZ2176AmCDqg"
+        api_key = *********
         llm = ChatOpenAI(api_key=api_key, temperature=0,model="gpt-4")
 
         wikipedia = WikipediaQueryRun(api_wrapper=WikipediaAPIWrapper())
-        serper_api_key = "9c64996bddbef44a7f3727e4f708fa953d729285"
+        serper_api_key = ***********
         google_search = GoogleSerperAPIWrapper(serper_api_key=serper_api_key, type='news', k=5)
 
         def summarize_text(docs):
